@@ -82,10 +82,8 @@
 				A18419C21924B4F7001ED83E /* IHAppDelegate.m */,
 				A18419C31924B4F7001ED83E /* Images.xcassets */,
 				A18419C41924B4F7001ED83E /* main.m */,
-				A18419C51924B4F7001ED83E /* Model */,
 				A18419C61924B4F7001ED83E /* Target-Action-Info.plist */,
 				A18419C71924B4F7001ED83E /* Target-Action-Prefix.pch */,
-				A18419C81924B4F7001ED83E /* View */,
 			);
 			path = "Target-Action";
 			sourceTree = "<group>";
@@ -97,20 +95,6 @@
 				A18419BE1924B4F7001ED83E /* IHViewController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		A18419C51924B4F7001ED83E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		A18419C81924B4F7001ED83E /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		A1FF60E418F9AF0B00923203 = {

@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>E3FDDC91-BBF8-4A38-9FA5-2A58004748CB</string>
+	<string>29B0C6D9-5AE8-4188-8F74-5C84DF55A3EE</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Target-Action</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>AF40CF87-17BF-432C-9300-1AA2BC6EFB44</key>
-		<string>https://bitbucket.org/frowing/target-action-exercises.git</string>
+		<key>3ABA96B5-C3F5-4F27-9C88-9731CB2C7256</key>
+		<string>https://bitbucket.org/frowing/ironhack-exercises.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Target-Action.xcodeproj/project.xcworkspace</string>
+	<string>Solved/Target-Action/Target-Action.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>AF40CF87-17BF-432C-9300-1AA2BC6EFB44</key>
-		<string>../..</string>
+		<key>3ABA96B5-C3F5-4F27-9C88-9731CB2C7256</key>
+		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://bitbucket.org/frowing/target-action-exercises.git</string>
+	<string>https://bitbucket.org/frowing/ironhack-exercises.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>AF40CF87-17BF-432C-9300-1AA2BC6EFB44</string>
+	<string>3ABA96B5-C3F5-4F27-9C88-9731CB2C7256</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>AF40CF87-17BF-432C-9300-1AA2BC6EFB44</string>
+			<string>3ABA96B5-C3F5-4F27-9C88-9731CB2C7256</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Target-Action</string>
+			<string>Ironhack-Exercises</string>
 		</dict>
 	</array>
 </dict>
