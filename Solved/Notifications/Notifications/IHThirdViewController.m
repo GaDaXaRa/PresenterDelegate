@@ -10,23 +10,18 @@
 
 @interface IHThirdViewController ()
 
+@property (nonatomic, strong) UILabel *numberOfBeersLabel;
+@property (nonatomic, strong) UISwitch *shouldWeCountSwitch;
+
 @end
 
 @implementation IHThirdViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self exercise1];
+    [self exercise2];
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,15 +30,40 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (void)exercise1
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(receiveNotification:) name:@"NewBeerNumber"
+                                               object:nil];
+    
+    self.numberOfBeersLabel =
+    [[UILabel alloc] initWithFrame:CGRectMake(10, 10, 100, 40)];
+    self.numberOfBeersLabel.text = @"30";
+    [self.view addSubview:self.numberOfBeersLabel];
 }
-*/
+
+- (void)receiveNotification:(NSNotification *)notification
+{
+    if (self.shouldWeCountSwitch.isOn)
+    {
+        NSDictionary *userInfo = notification.userInfo;
+        NSNumber *newNumberOfBeers = [userInfo objectForKey:@"numberOfBeers"];
+        
+        NSNumber *previousBeers =
+        [NSNumber numberWithInteger:[self.numberOfBeersLabel.text integerValue]];
+        NSUInteger totalNumberOfBeers = previousBeers.integerValue - newNumberOfBeers.integerValue;
+        
+        self.numberOfBeersLabel.text =
+        [NSString stringWithFormat:@"%d",totalNumberOfBeers];
+    }
+}
+
+- (void)exercise2
+{
+    self.shouldWeCountSwitch =
+    [[UISwitch alloc] initWithFrame:CGRectMake(150, 10, 100, 40)];
+    [self.shouldWeCountSwitch setOn:YES];
+    [self.view addSubview:self.shouldWeCountSwitch];
+}
 
 @end
