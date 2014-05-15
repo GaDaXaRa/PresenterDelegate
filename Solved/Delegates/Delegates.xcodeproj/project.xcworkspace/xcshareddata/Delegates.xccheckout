@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>84420BAC-D8FA-4B0E-8BFD-9BA4FFB36666</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Delegates</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F64EA7DC-9215-4CE4-B8A0-3C907F07FD96</key>
+		<string>https://bitbucket.org/frowing/delegation-exercises.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Delegates.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F64EA7DC-9215-4CE4-B8A0-3C907F07FD96</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/frowing/delegation-exercises.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F64EA7DC-9215-4CE4-B8A0-3C907F07FD96</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F64EA7DC-9215-4CE4-B8A0-3C907F07FD96</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Delegates</string>
+		</dict>
+	</array>
+</dict>
+</plist>
