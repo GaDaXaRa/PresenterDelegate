@@ -21,8 +21,6 @@
 {
     [super viewDidLoad];
     [self exercise1];
-
-    
 }
 
 - (void)didReceiveMemoryWarning
