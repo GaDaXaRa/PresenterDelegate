@@ -9,7 +9,10 @@
 #import "IHPresentedViewController.h"
 #import "IHViewController.h"
 
-@interface IHViewController ()
+//Exercise Hide the view controller but letting the presenter do it. The presented view controller will have to let it know using a delegate.
+@interface IHViewController ()<IHPresentedViewControllerDelegate>
+
+@property (nonatomic, strong)IHPresentedViewController *ourViewController;
 
 @end
 
@@ -57,29 +60,37 @@
 
 - (void)presentWithCoverVertical
 {
-    UIViewController *viewController = [self createViewController];
-    viewController.modalPresentationStyle = UIModalTransitionStyleCoverVertical;
-    [self presentViewController:viewController animated:YES completion:nil];
+    self.ourViewController = [self createViewController];
+    self.ourViewController.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    [self presentViewController:self.ourViewController animated:YES completion:nil];
 }
 
 - (void)presentWithFlip
 {
-    UIViewController *viewController = [self createViewController];
-    viewController.modalPresentationStyle = UIModalTransitionStyleFlipHorizontal;
-    [self presentViewController:viewController animated:YES completion:nil];
+    self.ourViewController = [self createViewController];
+    self.ourViewController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentViewController:self.ourViewController animated:YES completion:nil];
 }
 
 - (void)presentWithCrossDissolve
 {
-    UIViewController *viewController = [self createViewController];
-    viewController.modalPresentationStyle = UIModalTransitionStyleCrossDissolve;
-    [self presentViewController:viewController animated:YES completion:nil];
+    self.ourViewController = [self createViewController];
+    self.ourViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentViewController:self.ourViewController animated:YES completion:nil];
 }
 
-- (UIViewController *)createViewController
+- (IHPresentedViewController *)createViewController
 {
     IHPresentedViewController *viewController = [[IHPresentedViewController alloc] init];
+    viewController.delegate = self;
     return viewController;
+}
+
+#pragma mark IHPresentedViewControllerDelegate 
+
+- (void)dismissMe
+{
+    [self.ourViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 

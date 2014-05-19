@@ -47,7 +47,10 @@
 
 - (void)dismiss
 {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    if ([self.delegate respondsToSelector:@selector(dismissMe)])
+    {
+        [self.delegate dismissMe];
+    }
 }
 
 
