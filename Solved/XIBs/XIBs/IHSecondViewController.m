@@ -10,6 +10,8 @@
 
 @interface IHSecondViewController ()
 
+@property (nonatomic,strong)IBOutletCollection(UILabel) NSArray *labels;
+
 @end
 
 @implementation IHSecondViewController
@@ -31,6 +33,13 @@
     
     customView.frame = CGRectMake(100, 100, 100, 100);
     [self.view addSubview:customView];
+    
+//    Create three labels and connect them to the code using only one outlet. Change their font size using a loop.
+    
+    for (UILabel *label in self.labels)
+    {
+        label.textColor = [UIColor redColor];
+    }
 }
 
 - (void)didReceiveMemoryWarning
