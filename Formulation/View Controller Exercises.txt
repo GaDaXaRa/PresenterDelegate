@@ -1,0 +1,29 @@
+##Exercise
+
+Think about a view controller responding to the questions
+
+(Idea) Hand over iphone templates so they can draw in there.
+Will they have pencil and paper?
+
+#Rotation
+
+##Exercise 
+
+Have a view controller support only portrait and portrait upside down.
+Prevent the view controller from auto rotating at all.
+
+##Exercise 
+Override the app settings so the app can only be show in portrait.
+
+#Exercise
+Force the view controller to be presented in one of the orientation it supports
+
+#Presenting
+
+##Exercise 
+Have three buttons so each one of them presents a modal view controller in a different way.
+
+##Exercise 
+Hide the view controller but letting the presenter do it. The presented view controller will have to let it know using a delegate.
+
+#Exercise add a child view controller when we press a button

@@ -1,0 +1,28 @@
+##Exercise 1
+Create a view using `initWithFrame:` and add it as a subview of the current view. Give it a `backgroundColor` so it can be distinguished from the superview.
+
+##Exercise 2
+Create a second view and add it behind the first subview but in a way that can still be seen. Give it another color. 
+
+Then insert another one between the two.
+
+##Exercise 3
+Set three different autoresizing masks to the subviews to see how they perform when rotating the device.
+
+##Exercise 4
+Using the image in the assets,create image views with different content modes to see how they differ from the others
+
+##Exercise 5
+Perform some simple animations animating the `frame`, `center`, `alpha`, `backgroundColor` of a view.
+
+##Exercise 6
+Make a view fade out using an animation and then make it fade back in a second after it totally disappeared.
+
+##Exercise 7
+Create two UISlider instances and use them to configure the `transform` property of a new new. Use the the `CGAffineTransformMakeScale` and `CGAffineTransformMakeRotation` respectively to apply the values of the sliders. (These two functions create a transform from the original one, not from the current one)
+
+##Exercise 8
+Add a subview to the view being transformed and watch it change with its parent view.    
+
+(Bonus) Change the center, frame or bounds of a view and log the changes to the other ones using `NSLog` to see how they all change together.
+

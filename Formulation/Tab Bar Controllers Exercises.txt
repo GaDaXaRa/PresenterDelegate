@@ -1,0 +1,13 @@
+Exercise 1:
+Create a Tab Bar Controller with two view controllers inside and present it from the root view controller of the window.
+
+Exercise 2:
+Add an image to the view controllers' tab bar items. Changes the window `tintColor` and see what happens to the icons
+
+Exercise 3:
+Add a button in one of the view controllers that adds and removes a third view controller on the tab bar controller. Let's call this button "Add Bubbles"
+
+Exercise 4.
+Let's add a text field to the previous view controller to add new beer bubble types. When we enter some text and press the button, the third view controller gets created and adds a badge to the tab bar item indicating that there is a new value in there to be looked at. Also dismiss the keyboard so the user can see the badge.
+
+(Bonus) Don't allow to switch tabs while editing the text field. When the third view controller is shown, lets remove the badge from it.
