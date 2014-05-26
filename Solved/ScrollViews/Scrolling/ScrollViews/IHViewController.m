@@ -58,6 +58,9 @@
     [self.scrollView scrollRectToVisible:self.secondLabel.frame animated:NO];
 }
 
+
+//    Have three red bar button items in the tool for the `tracking`, `dragging` and `decelerating` properties of a scroll view. Then have a scrollview that we can interact with. When we do it, those labels turn to green as the properties they represent become `YES`.
+
 #pragma mark UIScrollViewDelegate methods 
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
@@ -83,8 +86,6 @@
 
 - (void)setTrackingLabels
 {
-//    Have three red bar button items in the tool for the `tracking`, `dragging` and `decelerating` properties of a scroll view. Then have a scrollview that we can interact with. When we do it, those labels turn to green as the properties they represent become `YES`.
-    
     self.scrollView.delegate = self;
     
     self.dragging =
