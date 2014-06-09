@@ -1,7 +1,0 @@
-##Exercise 
-Create window programmatically and add a root view controller to it.
-
-##Exercise 
-Create a view controller and add it to the window previously created. Do it in two different ways. ¿What's the main difference between the two?
-
-(Bonus) Find out if the device uses a retina display or not using the `screen` property in the window.

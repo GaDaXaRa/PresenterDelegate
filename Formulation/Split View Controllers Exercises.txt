@@ -1,7 +1,0 @@
-##Exercise 1
-Create a split view controller that shows two different view controllers. The view controller in the big view will need to have either a navigation bar or a toolbar to show a bar button that will be used to show the left view controller when the device is in portrait mode. Take a look at the `UISplitViewController` and `UISplitViewControllerDelegate` docs :)
-
-##Exercise 2
-Avoid hiding the second view controller when the device rotates.
-
-(Bonus)Have a switch in the main view controller that allows the user to decide whether he wants to hide or show the left view controller when the device rotates to portrait mode.
