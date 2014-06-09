@@ -338,7 +338,7 @@
 				GCC_PREFIX_HEADER = "Target-Action/Target-Action-Prefix.pch";
 				INFOPLIST_FILE = "Target-Action/Target-Action-Info.plist";
 				PRODUCT_NAME = "Target-Action";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -352,7 +352,7 @@
 				GCC_PREFIX_HEADER = "Target-Action/Target-Action-Prefix.pch";
 				INFOPLIST_FILE = "Target-Action/Target-Action-Info.plist";
 				PRODUCT_NAME = "Target-Action";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

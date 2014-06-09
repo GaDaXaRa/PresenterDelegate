@@ -34,9 +34,30 @@
     
 //   1.Set button's title for normal and highlighted state
     
+    [button setTitle:@"Normal" forState:UIControlStateNormal];
+    [button setTitle:@"Highlighted" forState:UIControlStateHighlighted];
+    
 //   2.When you press it, it should log "You pressed me!" or something similar
+
+    [button addTarget:self
+               action:@selector(buttonPressed)
+     forControlEvents:UIControlEventTouchDown];
+    
+    [button addTarget:self
+               action:@selector(buttonReleased)
+     forControlEvents:UIControlEventTouchUpInside];
     
 //   3.When you release it, it should log "You released me!
+}
+
+- (void)buttonPressed
+{
+    NSLog(@"You pressed me");
+}
+
+- (void)buttonReleased
+{
+    NSLog(@"You released me");
 }
 
 - (void)exercise2
@@ -86,6 +107,13 @@
 {
 //   1. Using a segmented control, let's change between the different line break modes
 //   for a label when it has multiple lines. I.e char wrapping, clipping and word wrapping.
+    
+}
+
+- (void)newMethod
+{
+    CGRect newRect = CGRectMake(0, 0, 100, 100);
+    UIButton *newButton = [[UIButton alloc] initWithFrame:newRect];
     
 }
 

@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Ironhack. All rights reserved.
 //
 
+#import "IHFirstViewController.h"
 #import "IHSecondViewController.h"
 
 @interface IHSecondViewController ()
@@ -29,7 +30,15 @@
 
 - (void)exercise1
 {
-    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(receiveNotification:)
+                                                 name:kBeersHadNotificationName
+                                               object:nil];
+}
+
+- (void)receiveNotification:(NSNotification *)notification
+{
+    NSDictionary *userInfo = notification.userInfo;
 }
 
 

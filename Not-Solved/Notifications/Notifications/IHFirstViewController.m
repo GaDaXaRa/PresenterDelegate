@@ -8,6 +8,8 @@
 
 #import "IHFirstViewController.h"
 
+NSString *const kBeersHadNotificationName = @"BeersHad";
+
 @interface IHFirstViewController ()
 
 @property (nonatomic, strong) UITextField *textField;
@@ -43,6 +45,10 @@
 //    When we enter a new number, we have to update at the same time the next two views
 //
 //    We can consider 30 beers as a good number to be had in a month, can't we? ;)
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:kBeersHadNotificationName
+                                                        object:self
+                                                      userInfo:@{ @"clave" : @"valor"}];
 }
 
 - (void)exercise2
