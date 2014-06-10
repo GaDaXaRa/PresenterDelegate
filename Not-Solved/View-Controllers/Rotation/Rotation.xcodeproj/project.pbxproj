@@ -423,6 +423,7 @@
 				A1841A5019251AF3001ED83E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1841A5119251AF3001ED83E /* Build configuration list for PBXNativeTarget "RotationTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +432,7 @@
 				A1841A5319251AF3001ED83E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
